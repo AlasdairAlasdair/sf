@@ -5,7 +5,19 @@ public class Tests {
          System.assertEquals(1, 1);
     }
     
+    
+    
+    
     @isTest static void test2() {
+        
+        
+        
+        
         System.assertEquals(1, 2);
     }
+    
+    
+    
+    
 }
+
