@@ -874,6 +874,22 @@
         <editable>false</editable>
         <field>mrlabel__c.mrfield__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>RegexExample__c.Quantity__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>RegexExample__c.TEST_AccountNumber__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>RegexExample__c.TEST_Price__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>RegexExample__c.TEST_Quantity__c</field>
+        <readable>true</readable>
     </fieldPermissions><objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
@@ -1073,6 +1089,22 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>mr_custom_object__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions><objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>NEWNEW__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions><objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>RegexExample__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions><recordTypeVisibilities>
         <default>false</default>

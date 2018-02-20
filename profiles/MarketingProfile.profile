@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata"><custom>false</custom><userLicense>Salesforce</userLicense><fieldPermissions>
+<?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata"><custom>false</custom><userLicense>Salesforce</userLicense><fieldPermissions>
         <editable>true</editable>
         <field>Account.AccountNumber</field>
         <readable>true</readable>
@@ -873,6 +873,22 @@
     </fieldPermissions><fieldPermissions>
         <editable>false</editable>
         <field>mrlabel__c.mrfield__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>RegexExample__c.Quantity__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>RegexExample__c.TEST_AccountNumber__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>RegexExample__c.TEST_Price__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>RegexExample__c.TEST_Quantity__c</field>
         <readable>true</readable>
     </fieldPermissions><recordTypeVisibilities>
         <default>false</default>
