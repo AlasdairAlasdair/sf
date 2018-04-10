@@ -7,6 +7,12 @@
     </classAccesses><classAccesses>
         <apexClass>PassingTests</apexClass>
         <enabled>true</enabled>
+    </classAccesses><classAccesses>
+        <apexClass>ANewClass</apexClass>
+        <enabled>true</enabled>
+    </classAccesses><classAccesses>
+        <apexClass>myOuterClass</apexClass>
+        <enabled>true</enabled>
     </classAccesses><fieldPermissions>
         <editable>true</editable>
         <field>Account.AccountNumber</field>
@@ -899,6 +905,14 @@
         <editable>true</editable>
         <field>RegexExample__c.TEST_Quantity__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Account.MrPicklistField__c</field>
+        <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>NewObject__c.formulafield__c</field>
+        <readable>true</readable>
     </fieldPermissions><recordTypeVisibilities>
         <default>false</default>
         <recordType>Idea.InternalIdeasIdeaRecordType</recordType>
@@ -910,6 +924,10 @@
     </recordTypeVisibilities><recordTypeVisibilities>
         <default>true</default>
         <recordType>Metric.Progress</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities><recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Account.MrRecordType</recordType>
         <visible>true</visible>
     </recordTypeVisibilities><tabVisibilities>
         <tab>standard-Account</tab>
