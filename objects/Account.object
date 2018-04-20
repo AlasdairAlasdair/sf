@@ -2,6 +2,10 @@
         <actionName>CallHighlightAction</actionName>
         <type>Default</type>
     </actionOverrides><actionOverrides>
+
+
+I've broken the XML?
+<<<<< right? this would probably break it.
         <actionName>CancelEdit</actionName>
         <type>Default</type>
     </actionOverrides><actionOverrides>
