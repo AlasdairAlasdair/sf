@@ -7,7 +7,6 @@
         <field>Account.AccountSource</field>
         <readable>true</readable>
     </fieldPermissions><fieldPermissions>
-<<< break
         <editable>true</editable>
         <field>Account.AnnualRevenue</field>
         <readable>true</readable>
