@@ -5,6 +5,10 @@
         <accessLevel>Edit</accessLevel>
         <description>A user sharing rule with write access</description>
         <label>Share sales with support</label>
+		
+		<<<<<<<<<<<< hello!
+		
+		.>>cosligh084xagf3q vc
         <sharedTo>
             <role>CustomerSupportNorthAmerica</role>
         </sharedTo>
