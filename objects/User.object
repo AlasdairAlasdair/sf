@@ -14,9 +14,6 @@
         <actionName>EmailHighlightAction</actionName>
         <type>Default</type>
     </actionOverrides><actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides><actionOverrides>
         <actionName>FreezeUserAction</actionName>
         <type>Default</type>
     </actionOverrides><actionOverrides>
@@ -56,7 +53,7 @@
         <searchResultsAdditionalFields>CORE.USERS.TITLE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CORE.USERS.PHONE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CORE.USERS.EMAIL</searchResultsAdditionalFields>
-    </searchLayouts><sharingModel>Read</sharingModel><listViews>
+    </searchLayouts><listViews>
         <fullName>ActiveUsers</fullName>
         <filterScope>Everything</filterScope>
         <filters>
