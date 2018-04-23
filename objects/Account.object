@@ -1,18 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides> 
-
-    
-    
-   
-        
-    <<<<<<<<< HEAD
-    // some code
-    =======
-    // some other code
-    >>>>>>> branch-a
-    <!-- Some tags left over from a fictitious merge -->
-    
-    
-    
   <actionName>CallHighlightAction</actionName>
     <type>Default</type>
   </actionOverrides><actionOverrides>
