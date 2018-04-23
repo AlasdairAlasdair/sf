@@ -230,7 +230,6 @@
     </listViews><listViews>
     <fullName>AllAccounts</fullName>
     <columns>ACCOUNT.NAME</columns>
-    <<< break
     <columns>ACCOUNT.SITE</columns>
     <columns>ACCOUNT.ADDRESS1_STATE</columns>
     <columns>ACCOUNT.PHONE1</columns>
