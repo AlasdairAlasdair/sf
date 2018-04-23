@@ -5,7 +5,6 @@
         <apexClass>FailingTests</apexClass>
         <enabled>true</enabled>
     </classAccesses><classAccesses>
-	<<< this is broken
         <apexClass>PassingTests</apexClass>
         <enabled>true</enabled>
     </classAccesses><classAccesses>
