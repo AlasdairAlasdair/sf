@@ -482,6 +482,25 @@
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Picklist</type>
+    </fields><fields>
+        <fullName>picky__c</fullName>
+        <externalId>false</externalId>
+        <label>picky</label>
+        <picklist>
+            <picklistValues>
+                <fullName>one</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>two</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
     </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>true</enableFeeds><enableHistory>false</enableHistory><recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory><searchLayouts>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ACCOUNT.ADDRESS1_CITY</customTabListAdditionalFields>
@@ -833,6 +852,17 @@
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>picky__c</picklist>
+            <values>
+                <fullName>one</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>two</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
