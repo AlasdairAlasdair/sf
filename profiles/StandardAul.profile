@@ -894,6 +894,10 @@
         <editable>false</editable>
         <field>NewObject__c.formulafield__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>mr_custom_object__c.ExcitingNumber__c</field>
+        <readable>true</readable>
     </fieldPermissions><recordTypeVisibilities>
         <default>false</default>
         <recordType>Idea.InternalIdeasIdeaRecordType</recordType>

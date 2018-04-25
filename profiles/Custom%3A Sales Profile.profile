@@ -882,6 +882,10 @@
         <editable>false</editable>
         <field>NewObject__c.formulafield__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>mr_custom_object__c.ExcitingNumber__c</field>
+        <readable>true</readable>
     </fieldPermissions><objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
