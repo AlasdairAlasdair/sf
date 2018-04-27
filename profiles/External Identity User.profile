@@ -886,6 +886,10 @@
         <default>true</default>
         <recordType>Account.MrRecordType</recordType>
         <visible>true</visible>
+    </recordTypeVisibilities><recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Opportunity.mabel</recordType>
+        <visible>false</visible>
     </recordTypeVisibilities><tabVisibilities>
         <tab>standard-Account</tab>
         <visibility>DefaultOn</visibility>

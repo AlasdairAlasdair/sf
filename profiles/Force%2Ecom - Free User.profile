@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata"><custom>false</custom><userLicense>Force.com - Free</userLicense><fieldPermissions>
+<?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata"><custom>false</custom><userLicense>Force.com - Free</userLicense><fieldPermissions>
         <editable>true</editable>
         <field>Account.AccountNumber</field>
         <readable>true</readable>
@@ -898,6 +898,10 @@
         <editable>false</editable>
         <field>NewObject__c.formulafield__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.eeeemail__c</field>
+        <readable>true</readable>
     </fieldPermissions><recordTypeVisibilities>
         <default>false</default>
         <recordType>Idea.InternalIdeasIdeaRecordType</recordType>
@@ -913,6 +917,10 @@
     </recordTypeVisibilities><recordTypeVisibilities>
         <default>true</default>
         <recordType>Account.MrRecordType</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities><recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Opportunity.mabel</recordType>
         <visible>true</visible>
     </recordTypeVisibilities><tabVisibilities>
         <tab>standard-Account</tab>

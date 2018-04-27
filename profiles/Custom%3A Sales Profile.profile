@@ -902,6 +902,10 @@
         <editable>true</editable>
         <field>Opportunity.geopointe__Geocode__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.eeeemail__c</field>
+        <readable>true</readable>
     </fieldPermissions><objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
@@ -1013,6 +1017,10 @@
     </recordTypeVisibilities><recordTypeVisibilities>
         <default>true</default>
         <recordType>Account.MrRecordType</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities><recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Opportunity.mabel</recordType>
         <visible>true</visible>
     </recordTypeVisibilities><tabVisibilities>
         <tab>standard-Account</tab>
