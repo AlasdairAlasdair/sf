@@ -922,7 +922,13 @@
         <editable>true</editable>
         <field>Opportunity.eeeemail__c</field>
         <readable>true</readable>
-    </fieldPermissions><objectPermissions>
+    </fieldPermissions><fieldPermissions>
+        <editable>false</editable>
+        <field>bigobject__c.num__c</field>
+        <readable>true</readable>
+    </fieldPermissions><layoutAssignments>
+        <layout>bigobject__c-bigobject Layout</layout>
+    </layoutAssignments><objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
         <allowEdit>false</allowEdit>

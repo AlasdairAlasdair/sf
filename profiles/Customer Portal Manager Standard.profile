@@ -874,7 +874,9 @@
         <editable>true</editable>
         <field>Opportunity.eeeemail__c</field>
         <readable>true</readable>
-    </fieldPermissions><recordTypeVisibilities>
+    </fieldPermissions><layoutAssignments>
+        <layout>bigobject__c-bigobject Layout</layout>
+    </layoutAssignments><recordTypeVisibilities>
         <default>false</default>
         <recordType>Idea.InternalIdeasIdeaRecordType</recordType>
         <visible>false</visible>
