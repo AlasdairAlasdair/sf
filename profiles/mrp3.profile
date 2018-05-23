@@ -924,10 +924,10 @@
         <readable>true</readable>
     </fieldPermissions><fieldPermissions>
         <editable>false</editable>
-        <field>bigobject__c.num__c</field>
+        <field>bigobject__b.num__c</field>
         <readable>true</readable>
     </fieldPermissions><layoutAssignments>
-        <layout>bigobject__c-bigobject Layout</layout>
+        <layout>bigobject__b-bigobject Layout</layout>
     </layoutAssignments><objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
@@ -1182,7 +1182,7 @@
         <allowEdit>false</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
-        <object>bigobject__c</object>
+        <object>bigobject__b</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions><recordTypeVisibilities>
         <default>false</default>

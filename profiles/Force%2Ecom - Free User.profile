@@ -904,10 +904,10 @@
         <readable>true</readable>
     </fieldPermissions><fieldPermissions>
         <editable>false</editable>
-        <field>bigobject__c.num__c</field>
+        <field>bigobject__b.num__c</field>
         <readable>true</readable>
     </fieldPermissions><layoutAssignments>
-        <layout>bigobject__c-bigobject Layout</layout>
+        <layout>bigobject__b-bigobject Layout</layout>
     </layoutAssignments><recordTypeVisibilities>
         <default>false</default>
         <recordType>Idea.InternalIdeasIdeaRecordType</recordType>

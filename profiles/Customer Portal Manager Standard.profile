@@ -875,7 +875,7 @@
         <field>Opportunity.eeeemail__c</field>
         <readable>true</readable>
     </fieldPermissions><layoutAssignments>
-        <layout>bigobject__c-bigobject Layout</layout>
+        <layout>bigobject__b-bigobject Layout</layout>
     </layoutAssignments><recordTypeVisibilities>
         <default>false</default>
         <recordType>Idea.InternalIdeasIdeaRecordType</recordType>
