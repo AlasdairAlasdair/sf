@@ -346,6 +346,9 @@
         <trackTrending>false</trackTrending>
         <type>Email</type>
         <unique>false</unique>
+    </fields><fields>
+        <fullName>IqScore</fullName>
+        <trackTrending>false</trackTrending>
     </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>true</enableFeeds><enableHistory>false</enableHistory><recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory><searchLayouts>
         <customTabListAdditionalFields>OPPORTUNITY.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
