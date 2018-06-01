@@ -7,7 +7,7 @@ public class myOuterClass {
     public final Integer j = 3;
        
     class myInnerClass {        
-        public final Integer i = 1;
+        public final Integer i2 = 1;
     }
       
     // this is a comment.
