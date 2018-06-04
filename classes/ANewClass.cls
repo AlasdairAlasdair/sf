@@ -1,3 +1,3 @@
-public class ANewClass {
+public class aNewClass {
 
 }
