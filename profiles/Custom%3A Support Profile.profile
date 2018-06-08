@@ -902,6 +902,10 @@
         <editable>true</editable>
         <field>Opportunity.eeeemail__c</field>
         <readable>true</readable>
+    </fieldPermissions><fieldPermissions>
+        <editable>true</editable>
+        <field>s2sobject__c.funnumber__c</field>
+        <readable>true</readable>
     </fieldPermissions><objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
