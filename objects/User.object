@@ -37,6 +37,9 @@
     </actionOverrides><actionOverrides>
         <actionName>UserActivationAction</actionName>
         <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
     </actionOverrides><fields>
         <fullName>ManagerId</fullName>
         <trackFeedHistory>true</trackFeedHistory>
@@ -53,7 +56,7 @@
         <searchResultsAdditionalFields>CORE.USERS.TITLE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CORE.USERS.PHONE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CORE.USERS.EMAIL</searchResultsAdditionalFields>
-    </searchLayouts><listViews>
+    </searchLayouts><sharingModel>Read</sharingModel><listViews>
         <fullName>ActiveUsers</fullName>
         <filterScope>Everything</filterScope>
         <filters>
