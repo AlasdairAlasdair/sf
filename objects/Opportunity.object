@@ -1,37 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>AddInfluence</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Clone</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Follow</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>New</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Tab</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
-    </actionOverrides><businessProcesses>
+    </actionOverrides>
+    <businessProcesses>
         <fullName>MrSalesProcess</fullName>
         <description>hello</description>
         <isActive>true</isActive>
@@ -75,30 +87,36 @@
             <fullName>Value Proposition</fullName>
             <default>false</default>
         </values>
-    </businessProcesses><fields>
+    </businessProcesses>
+    <fields>
         <fullName>AccountId</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Amount</fullName>
         <trackFeedHistory>true</trackFeedHistory>
         <trackTrending>false</trackTrending>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CampaignId</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CloseDate</fullName>
         <trackFeedHistory>true</trackFeedHistory>
         <trackTrending>false</trackTrending>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ContractId</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CurrentGenerators__c</fullName>
         <externalId>false</externalId>
         <label>Current Generator(s)</label>
@@ -108,7 +126,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>DeliveryInstallationStatus__c</fullName>
         <externalId>false</externalId>
         <label>Delivery/Installation Status</label>
@@ -131,18 +150,22 @@
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Description</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ExpectedRevenue</fullName>
         <trackTrending>false</trackTrending>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>IsPrivate</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>LeadSource</fullName>
         <picklist>
             <picklistValues>
@@ -170,7 +193,8 @@
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>MainCompetitors__c</fullName>
         <externalId>false</externalId>
         <label>Main Competitor(s)</label>
@@ -180,15 +204,18 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Name</fullName>
         <trackFeedHistory>true</trackFeedHistory>
         <trackTrending>false</trackTrending>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>NextStep</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>OrderNumber__c</fullName>
         <externalId>false</externalId>
         <label>Order Number</label>
@@ -198,20 +225,24 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>OwnerId</fullName>
         <trackFeedHistory>true</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Pricebook2Id</fullName>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Probability</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>StageName</fullName>
         <picklist>
             <picklistValues>
@@ -299,11 +330,13 @@
         <trackFeedHistory>true</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>TotalOpportunityQuantity</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>TrackingNumber__c</fullName>
         <externalId>false</externalId>
         <label>Tracking Number</label>
@@ -313,7 +346,8 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Type</fullName>
         <picklist>
             <picklistValues>
@@ -337,7 +371,8 @@
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>eeeemail__c</fullName>
         <externalId>false</externalId>
         <label>eeeemail</label>
@@ -346,7 +381,8 @@
         <trackTrending>false</trackTrending>
         <type>Email</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>IqScore</fullName>
         <trackTrending>false</trackTrending>
     </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>true</enableFeeds><enableHistory>false</enableHistory><recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory><searchLayouts>
@@ -365,11 +401,13 @@
         <searchResultsAdditionalFields>OPPORTUNITY.STAGE_NAME</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>OPPORTUNITY.CLOSE_DATE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
-    </searchLayouts><sharingModel>ReadWrite</sharingModel><listViews>
+    </searchLayouts><sharingModel>ReadWrite</sharingModel>
+    <listViews>
         <fullName>AllOpportunities</fullName>
         <filterScope>Everything</filterScope>
         <label>All Opportunities</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>ClosingNextMonth</fullName>
         <filterScope>Everything</filterScope>
         <filters>
@@ -383,7 +421,8 @@
             <value>NEXT_MONTH</value>
         </filters>
         <label>Closing Next Month</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>ClosingThisMonth</fullName>
         <filterScope>Everything</filterScope>
         <filters>
@@ -397,7 +436,8 @@
             <value>THIS_MONTH</value>
         </filters>
         <label>Closing This Month</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>Default_Opportunity_Pipeline</fullName>
         <filterScope>Mine</filterScope>
         <filters>
@@ -406,11 +446,13 @@
             <value>LAST_N_MONTHS:3</value>
         </filters>
         <label>Opportunity Pipeline</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>MyOpportunities</fullName>
         <filterScope>Mine</filterScope>
         <label>My Opportunities</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>NewLastWeek</fullName>
         <filterScope>Everything</filterScope>
         <filters>
@@ -419,7 +461,8 @@
             <value>LAST_WEEK</value>
         </filters>
         <label>New Last Week</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>NewThisWeek</fullName>
         <filterScope>Everything</filterScope>
         <filters>
@@ -428,7 +471,8 @@
             <value>THIS_WEEK</value>
         </filters>
         <label>New This Week</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>Private</fullName>
         <filterScope>Everything</filterScope>
         <filters>
@@ -437,7 +481,8 @@
             <value>1</value>
         </filters>
         <label>Private</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>Won</fullName>
         <filterScope>Everything</filterScope>
         <filters>
@@ -451,7 +496,8 @@
             <value>1</value>
         </filters>
         <label>Won</label>
-    </listViews><recordTypes>
+    </listViews>
+    <recordTypes>
         <fullName>mabel</fullName>
         <active>true</active>
         <businessProcess>MrSalesProcess</businessProcess>
@@ -514,7 +560,8 @@
                 <default>false</default>
             </values>
         </picklistValues>
-    </recordTypes><webLinks>
+    </recordTypes>
+    <webLinks>
         <fullName>DeliveryStatus</fullName>
         <availability>online</availability>
         <displayType>link</displayType>
@@ -532,4 +579,5 @@
         <showsLocation>true</showsLocation>
         <showsStatus>true</showsStatus>
         <url>http://www.fedex.com/cgi-bin/tracking?tracknumbers={!Opportunity_Tracking_Number}&amp;action=track&amp;language=english&amp;cntry_code=us</url>
-    </webLinks></CustomObject>
+    </webLinks>
+</CustomObject>

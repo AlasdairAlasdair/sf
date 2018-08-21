@@ -1,76 +1,101 @@
-<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>AddToCampaign</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CallHighlightAction</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>ChangeStatus</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Clone</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Convert</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>EmailHighlightAction</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>FindDup</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Follow</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>ListClean</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>New</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Tab</actionName>
         <type>Default</type>
-    </actionOverrides><actionOverrides>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>View</actionName>
         <type>Default</type>
-    </actionOverrides><fields>
+    </actionOverrides>
+    <fields>
         <fullName>Address</fullName>
         <trackFeedHistory>false</trackFeedHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>AnnualRevenue</fullName>
         <trackFeedHistory>false</trackFeedHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CampaignId</fullName>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CleanStatus</fullName>
         <trackFeedHistory>false</trackFeedHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Company</fullName>
         <trackFeedHistory>false</trackFeedHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CompanyDunsNumber</fullName>
         <trackFeedHistory>false</trackFeedHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>CurrentGenerators__c</fullName>
         <externalId>false</externalId>
         <label>Current Generator(s)</label>
@@ -79,29 +104,37 @@
         <trackFeedHistory>false</trackFeedHistory>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>DandbCompanyId</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Description</fullName>
         <trackFeedHistory>false</trackFeedHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>DoNotCall</fullName>
         <trackFeedHistory>false</trackFeedHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Email</fullName>
         <trackFeedHistory>false</trackFeedHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Fax</fullName>
         <trackFeedHistory>false</trackFeedHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>HasOptedOutOfEmail</fullName>
         <trackFeedHistory>false</trackFeedHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>HasOptedOutOfFax</fullName>
         <trackFeedHistory>false</trackFeedHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Industry</fullName>
         <picklist>
             <picklistValues>
@@ -236,14 +269,18 @@
         </picklist>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Picklist</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>IqScore</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Jigsaw</fullName>
         <trackFeedHistory>false</trackFeedHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>LastTransferDate</fullName>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>LeadSource</fullName>
         <picklist>
             <picklistValues>
@@ -270,16 +307,20 @@
         </picklist>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Picklist</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>MobilePhone</fullName>
         <trackFeedHistory>false</trackFeedHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Name</fullName>
         <trackFeedHistory>true</trackFeedHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>NumberOfEmployees</fullName>
         <trackFeedHistory>false</trackFeedHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>NumberofLocations__c</fullName>
         <externalId>false</externalId>
         <label>Number of Locations</label>
@@ -289,14 +330,17 @@
         <trackFeedHistory>false</trackFeedHistory>
         <type>Number</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>OwnerId</fullName>
         <trackFeedHistory>true</trackFeedHistory>
         <type>Lookup</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Phone</fullName>
         <trackFeedHistory>false</trackFeedHistory>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Primary__c</fullName>
         <externalId>false</externalId>
         <label>Primary</label>
@@ -314,7 +358,8 @@
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Picklist</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>ProductInterest__c</fullName>
         <externalId>false</externalId>
         <label>Product Interest</label>
@@ -336,7 +381,8 @@
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Picklist</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>Rating</fullName>
         <picklist>
             <picklistValues>
@@ -355,7 +401,8 @@
         </picklist>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Picklist</type>
-    </fields><fields>
+    </fields>
+    <fields>
         <fullName>SICCode__c</fullName>
         <externalId>false</externalId>
         <label>SIC Code</label>
@@ -364,16 +411,30 @@
         <trackFeedHistory>false</trackFeedHistory>
         <type>Text</type>
         <unique>false</unique>
-    </fields><fields>
+    </fields>
+    <fields>
+        <fullName>Title</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Website</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
         <fullName>Status</fullName>
         <picklist>
             <picklistValues>
-                <fullName>Open - Not Contacted</fullName>
+                <fullName>New - Not Contacted</fullName>
                 <default>true</default>
                 <converted>false</converted>
             </picklistValues>
             <picklistValues>
                 <fullName>Working - Contacted</fullName>
+                <default>false</default>
+                <converted>false</converted>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Nurturing - Contacted</fullName>
                 <default>false</default>
                 <converted>false</converted>
             </picklistValues>
@@ -391,12 +452,6 @@
         </picklist>
         <trackFeedHistory>true</trackFeedHistory>
         <type>Picklist</type>
-    </fields><fields>
-        <fullName>Title</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-    </fields><fields>
-        <fullName>Website</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
     </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>true</enableFeeds><enableHistory>false</enableHistory><searchLayouts>
         <customTabListAdditionalFields>FULL_NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>LEAD.COMPANY</customTabListAdditionalFields>
@@ -415,7 +470,8 @@
         <searchResultsAdditionalFields>LEAD.EMAIL</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LEAD.STATUS</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
-    </searchLayouts><sharingModel>ReadWriteTransfer</sharingModel><listViews>
+    </searchLayouts><sharingModel>ReadWriteTransfer</sharingModel>
+    <listViews>
         <fullName>AllOpenLeads</fullName>
         <filterScope>Everything</filterScope>
         <filters>
@@ -424,7 +480,8 @@
             <value>closed</value>
         </filters>
         <label>All Open Leads</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>MyUnreadLeads</fullName>
         <filterScope>Mine</filterScope>
         <filters>
@@ -433,7 +490,8 @@
             <value>1</value>
         </filters>
         <label>My Unread Leads</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>TodaysLeads</fullName>
         <filterScope>Everything</filterScope>
         <filters>
@@ -442,7 +500,8 @@
             <value>TODAY</value>
         </filters>
         <label>Today's Leads</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>ViewCustom1</fullName>
         <columns>FULL_NAME</columns>
         <columns>LEAD.COMPANY</columns>
@@ -454,7 +513,8 @@
         <columns>LEAD.UNREAD</columns>
         <filterScope>Everything</filterScope>
         <label>View - Custom 1</label>
-    </listViews><listViews>
+    </listViews>
+    <listViews>
         <fullName>ViewCustom2</fullName>
         <columns>FULL_NAME</columns>
         <columns>LEAD.COMPANY</columns>
@@ -467,4 +527,5 @@
         <columns>LEAD.LEAD_SOURCE</columns>
         <filterScope>Everything</filterScope>
         <label>View - Custom 2</label>
-    </listViews></CustomObject>
+    </listViews>
+</CustomObject>
