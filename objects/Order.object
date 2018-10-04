@@ -77,6 +77,41 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>ContractEndDate</fullName>
+    </fields>
+    <fields>
+        <fullName>ContractId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContractName</fullName>
+    </fields>
+    <fields>
+        <fullName>EndDate</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>IsReductionOrder</fullName>
+    </fields>
+    <fields>
+        <fullName>OpportunityId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>OriginalOrderId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TotalAmount</fullName>
+    </fields>
+    <fields>
         <fullName>BillToContactId</fullName>
         
         <type>Lookup</type>
@@ -93,17 +128,6 @@
     <fields>
         <fullName>CompanyAuthorizedDate</fullName>
         
-    </fields>
-    <fields>
-        <fullName>ContractEndDate</fullName>
-    </fields>
-    <fields>
-        <fullName>ContractId</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>ContractName</fullName>
     </fields>
     <fields>
         <fullName>CustomerAuthorizedById</fullName>
@@ -123,33 +147,12 @@
         
     </fields>
     <fields>
-        <fullName>EndDate</fullName>
-        <trackHistory>false</trackHistory>
-    </fields>
-    <fields>
-        <fullName>IsReductionOrder</fullName>
-    </fields>
-    <fields>
         <fullName>Name</fullName>
         
     </fields>
     <fields>
-        <fullName>OpportunityId</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
         <fullName>OrderReferenceNumber</fullName>
         
-    </fields>
-    <fields>
-        <fullName>OriginalOrderId</fullName>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>OwnerId</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>PoDate</fullName>
@@ -167,9 +170,6 @@
     <fields>
         <fullName>ShippingAddress</fullName>
         
-    </fields>
-    <fields>
-        <fullName>TotalAmount</fullName>
     </fields>
     <fields>
         <fullName>Type</fullName>

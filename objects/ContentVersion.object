@@ -33,19 +33,19 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>TagCsv</fullName>
+    </fields>
+    <fields>
+        <fullName>Title</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>SharingOption</fullName>
         
     </fields>
     <fields>
         <fullName>SharingPrivacy</fullName>
         
-    </fields>
-    <fields>
-        <fullName>TagCsv</fullName>
-    </fields>
-    <fields>
-        <fullName>Title</fullName>
-        <trackHistory>false</trackHistory>
     </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds><searchLayouts>
         <searchResultsAdditionalFields>VERSION.TITLE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>VERSION.CONTENT_SIZE</searchResultsAdditionalFields>
