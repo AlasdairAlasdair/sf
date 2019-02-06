@@ -10,11 +10,5 @@
         controller.verifyNewPassword = 'qwerty1';                
         
         System.assertEquals(controller.changePassword(),null);                           
-    }    
-   
-      @IsTest(SeeAllData=false) public static void testCrudViolation() {
-         if (schema.SObjectType.something__c.fields.somethingelse__c.IsAccessible()){
-            System.assertEquals(1,1);
-         }
-      }
+    }
 }
