@@ -70,24 +70,4 @@
     <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
-    <listViews>
-        <fullName>All</fullName>
-        <filterScope>Everything</filterScope>
-        <label>All</label>
-    </listViews>
-    <listViews>
-        <fullName>ListView2s</fullName>
-        <columns>NAME</columns>
-        <columns>MrTextField__c</columns>
-        <columns>OWNER.FIRST_NAME</columns>
-        <columns>OWNER.LAST_NAME</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>MrTextField__c</field>
-            <operation>equals</operation>
-            <value>a</value>
-        </filters>
-        <label>ListView2</label>
-        <language>en_US</language>
-    </listViews>
 </CustomObject>
