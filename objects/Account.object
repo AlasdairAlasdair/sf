@@ -368,6 +368,19 @@
             </valueSetDefinition>
         </valueSet>
     </fields>
+    <fields>
+        <fullName>loooooooooooooooooooooooooooooooongname1__c</fullName>
+        <defaultValue>"heeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeello"</defaultValue>
+        <description>Does this contribute to the length? Does this contribute to the length? Does this contribute to the length? Does this contribute to the length? Does this contribute to the length? Does this contribute to the length? Does this contribute to the length? Does this contribute to the length? Does this contribute to the length? Does this contribute to the length? Does this contribute to the length? Does this contribute to the length? Does this contribute to the length? Does this contribute to the length? Does this contribute to the length? Does this contribute to the length? Does this contribute to the length? Does this contribute to the length? Does this contribute to the length? Does this contribute to the length? Does this contribute to the length? Does this contribute to the length? Does this contribute to the length? Does this contribute to the length? Does this contribute to the length? Does this contribute to the length? Does this contribute to the length? Does this contribute to the</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Does this contribute to the length? Does this contribute to the length? Does this contribute to the length? Does this contribute to the length? Does this contribute to the length? Does this contribute to the length? Does this contribute to the length? Doe</inlineHelpText>
+        <label>loooooooooooooooooooooooooooooooongname1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>true</enableFeeds>
     <enableHistory>false</enableHistory>
