@@ -46,7 +46,7 @@
         <field>Account.loooooooooooooooooooooooooooooooongname1__c</field>
         <readable>true</readable>
     </fieldPermissions>
-	    <fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Account.loooooooooooooooooooooooooooongname0__c</field>
         <readable>true</readable>
@@ -546,10 +546,14 @@
         <field>Account.loooooooooooooooooooooooooooongname99__c</field>
         <readable>true</readable>
     </fieldPermissions>
-
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.picky__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.ManuallyCreatedField__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>
