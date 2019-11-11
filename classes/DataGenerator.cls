@@ -39,11 +39,32 @@ global class DataGenerator implements Schedulable {
         update accountToEdit;
     }
     
+    private void DoAction() {
+        Integer actionIndex =  Integer.valueof((Math.random() * 3));
+            
+        switch on actionIndex {
+            when 0 {
+                CreateRandomAccount();
+            }
+            when 1 {
+                DeleteRandomAccount();
+            }
+            when 2 {
+                EditRandomAccount();
+            }
+            when else {
+                System.debug('default');
+            }
+        }
+    }
+    
 	global void execute(SchedulableContext ctx) {
-        CreateRandomAccount();
-       	DeleteRandomAccount();
-        EditRandomAccount();
-        String now = Datetime.now().format();  
+        
+        for (Integer i = 0; i < 15; i++) {
+            DoAction();
+        }
+        
+        String now = Datetime.now().format();
         System.debug('Data munger ran @ ' + now);
    }   
 }
