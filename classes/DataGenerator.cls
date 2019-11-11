@@ -2,7 +2,8 @@ global class DataGenerator implements Schedulable {
 
 // This test runs a scheduled job at midnight Sept. 3rd. 2022
 
-   public static String CRON_EXP = '0 0 0 3 9 ? 2022';
+//    public static String CRON_EXP = '0 0 0 3 9 ? 2022';
+    public static String CRON_EXP = '30 * * * * ?';
    
     global void execute(SchedulableContext ctx) {
         CronTrigger ct = [SELECT Id, CronExpression, TimesTriggered, NextFireTime
