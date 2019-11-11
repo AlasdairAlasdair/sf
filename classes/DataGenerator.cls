@@ -1,11 +1,114 @@
 global class DataGenerator implements Schedulable {
-    private static List<String> firstNames = new List<String>{'Alan','Ben','Chris','Dave','Evan'};
-    private static List<String> lastNames = new List<String>{'Aaronson','Benson','Chrisson','Davidson','Evanson'};
+    private static List<String> firstNames = new List<String>{
+        'Olivia',
+        'Emily',
+        'Isla',
+        'Sophie',
+        'Amelia',
+        'Ella',
+        'Ava',
+        'Grace',
+        'Aria',
+        'Jessica',
+        'Charlotte',
+        'Sophia',
+        'Freya',
+        'Lucy',
+        'Lily',
+        'Evie',
+        'Harper',
+        'Ellie',
+        'Eilidh',
+        'Mia',
+        'Millie',
+        'Anna',
+        'Emma',
+        'Ruby',
+        'Maisie',
+        'Jack',
+        'Oliver',
+        'James',
+        'Logan',
+        'Leo',
+        'Lewis',
+        'Alexander',
+        'Harris',
+        'Noah',
+        'Rory',
+        'Charlie',
+        'Harry',
+        'Lucas',
+        'Jacob',
+        'Thomas',
+        'Alfie',
+        'Archie',
+        'Max',
+        'Finlay',
+        'Finn',
+        'Adam',
+        'Daniel',
+        'Ethan',
+        'Mason',
+        'Brodie'
+    };
+
+    private static List<String> initials = new List<String>{
+        'A',
+        'B',
+        'C',
+        'D',
+        'E',
+        'F',
+        'G',
+        'H',
+        'I',
+        'J',
+        'K',
+        'L',
+        'M',
+        'N',
+        'O',
+        'P',
+        'Q',
+        'R',
+        'S',
+        'T',
+        'U',
+        'V',
+        'W',
+        'X',
+        'Y',
+        'Z'
+    };
+
+    private static List<String> lastNames = new List<String>{
+        'Smith',
+        'Jones',
+        'Taylor',
+        'Brown',
+        'Williams',
+        'Wilson',
+        'Johnson',
+        'Davies',
+        'Robinson',
+        'Wright',
+        'Thompson',
+        'Evans',
+        'Walker',
+        'White',
+        'Roberts',
+        'Green',
+        'Hall',
+        'Wood',
+        'Jackson',
+        'Clarke'
+	};
 
     private String GenerateRandomName() {
         Integer randomFirstNameIndex = Integer.valueof((Math.random() * (firstNames.size() - 1)));
+        Integer randomInitialIndex = Integer.valueof((Math.random() * (initials.size() - 1)));
         Integer randomLastNameIndex = Integer.valueof((Math.random() * (lastNames.size() - 1)));        
-        String randomName = firstNames[randomFirstNameIndex] + ' ' + lastNames[randomLastNameIndex];
+        String randomName = firstNames[randomFirstNameIndex] + ' ' + initials[randomInitialIndex] + '. ' + lastNames[randomLastNameIndex];
         return randomName;
     }
     
