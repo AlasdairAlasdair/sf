@@ -13,6 +13,11 @@ global class DataGenerator implements Schedulable {
         System.assertEquals(0, ct.TimesTriggered);
         System.assertEquals('2022-09-03 00:00:00', String.valueOf(ct.NextFireTime));
 
+        String now = Datetime.now().format();
+        Account account = new Account();
+        account.Name = 'hello from cron at' + now;
+        insert account;
+      
         Account a = [SELECT Id, Name FROM Account WHERE Name = 
                     'testScheduledApexFromTestMethod'];
         a.name = 'testScheduledApexFromTestMethodUpdated';
