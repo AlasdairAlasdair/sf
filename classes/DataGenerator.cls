@@ -21,17 +21,28 @@ global class DataGenerator implements Schedulable {
       	insert a; 
     }
     
-    private void DeleteRandomAccount() {
-        
+    private Account GetRandomAccount(){
         Integer accountsCount = [SELECT COUNT() FROM Account];
 		Integer randomAccountIndex = Math.floor(Math.random() * accountsCount).intValue();
-		Account randomAccount = [SELECT Name FROM Account LIMIT 1 OFFSET :randomAccountIndex];
-       	delete randomAccount;
+		return [SELECT Name FROM Account LIMIT 1 OFFSET :randomAccountIndex];
+    }
+    
+    private void DeleteRandomAccount() {
+		Account accountToDelete = GetRandomAccount();
+       	delete accountToDelete;
+    }
+    
+	private void EditRandomAccount() {
+        Account accountToEdit = GetRandomAccount();
+        accountToEdit.Name = GenerateRandomName();
+        accountToEdit.Phone = GenerateRandomPhone();
+        update accountToEdit;
     }
     
 	global void execute(SchedulableContext ctx) {
         CreateRandomAccount();
        	DeleteRandomAccount();
+        EditRandomAccount();
         String now = Datetime.now().format();  
         System.debug('Data munger ran @ ' + now);
    }   
