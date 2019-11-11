@@ -102,7 +102,7 @@ global class DataGenerator implements Schedulable {
         'Wood',
         'Jackson',
         'Clarke'
-	};
+    };
 
     private String GenerateRandomName() {
         Integer randomFirstNameIndex = Integer.valueof((Math.random() * (firstNames.size() - 1)));
@@ -119,23 +119,23 @@ global class DataGenerator implements Schedulable {
     
     private void CreateRandomAccount() {
         Account a = new Account();
-      	a.Name = GenerateRandomName();
-       	a.Phone = GenerateRandomPhone();
-      	insert a; 
+        a.Name = GenerateRandomName();
+        a.Phone = GenerateRandomPhone();
+        insert a; 
     }
     
     private Account GetRandomAccount(){
         Integer accountsCount = [SELECT COUNT() FROM Account];
-		Integer randomAccountIndex = Math.floor(Math.random() * accountsCount).intValue();
-		return [SELECT Name FROM Account LIMIT 1 OFFSET :randomAccountIndex];
+        Integer randomAccountIndex = Math.floor(Math.random() * accountsCount).intValue();
+        return [SELECT Name FROM Account LIMIT 1 OFFSET :randomAccountIndex];
     }
     
     private void DeleteRandomAccount() {
-		Account accountToDelete = GetRandomAccount();
-       	delete accountToDelete;
+        Account accountToDelete = GetRandomAccount();
+        delete accountToDelete;
     }
     
-	private void EditRandomAccount() {
+    private void EditRandomAccount() {
         Account accountToEdit = GetRandomAccount();
         accountToEdit.Name = GenerateRandomName();
         accountToEdit.Phone = GenerateRandomPhone();
@@ -161,7 +161,7 @@ global class DataGenerator implements Schedulable {
         }
     }
     
-	global void execute(SchedulableContext ctx) {
+    global void execute(SchedulableContext ctx) {
         
         for (Integer i = 0; i < 15; i++) {
             DoAction();
