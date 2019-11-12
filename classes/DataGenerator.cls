@@ -1,14 +1,19 @@
 global class DataGenerator implements Schedulable {
+
+    private Integer GetRandomNumber(Integer multiplier) {
+        return Integer.valueof(Math.random() * multiplier);
+    }
+
     private String GenerateRandomName() {
-        Integer randomFirstNameIndex = Integer.valueof((Math.random() * (Names.FirstNames.size() - 1)));
-        Integer randomInitialIndex = Integer.valueof((Math.random() * (Names.Initials.size() - 1)));
-        Integer randomLastNameIndex = Integer.valueof((Math.random() * (Names.LastNames.size() - 1)));        
+        Integer randomFirstNameIndex = GetRandomNumber(Names.FirstNames.size() - 1);
+        Integer randomInitialIndex = GetRandomNumber(Names.Initials.size() - 1);
+        Integer randomLastNameIndex = GetRandomNumber(Names.LastNames.size() - 1);        
         String randomName = Names.FirstNames[randomFirstNameIndex] + ' ' + Names.Initials[randomInitialIndex] + '. ' + Names.LastNames[randomLastNameIndex];
         return randomName;
     }
     
     private String GenerateRandomPhone() {
-        String randomPhone = String.valueOf(Integer.valueof((Math.random() * 100000000)));
+        String randomPhone = String.valueOf(GetRandomNumber(100000000));
         return randomPhone;
     }
     
@@ -38,7 +43,7 @@ global class DataGenerator implements Schedulable {
     }
     
     private void DoAction() {
-        Integer actionIndex =  Integer.valueof((Math.random() * 3));
+        Integer actionIndex =  GetRandomNumber(3);
             
         switch on actionIndex {
             when 0 {
