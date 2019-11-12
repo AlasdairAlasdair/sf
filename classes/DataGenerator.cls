@@ -154,8 +154,10 @@ global class DataGenerator implements Schedulable {
     
     private void CreateRandomOpportunity() {
         Opportunity newOpportunity = new Opportunity();
-        newOpportunity.IsClosed = GenerateRandomBool();
-        newOpportunity.Description = GenerateRandomString(GetRandomNumber(10));
+        newOpportunity.Description =  GenerateRandomString(GetRandomNumber(20)); 
+        newOpportunity.Name = GenerateRandomCompany();
+        newOpportunity.StageName = 'Stage1';
+        newOpportunity.CloseDate =  date.newInstance(2020, 5, 1);
         insert newOpportunity;
     }
     
