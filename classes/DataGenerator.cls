@@ -44,7 +44,32 @@ global class DataGenerator implements Schedulable {
         update accountToEdit;
     }
     
-    private void DoAction() {
+    private void CreateRandomCase() {
+        Case c = new Case();
+        // a.Name = GenerateRandomName();
+        // a.Phone = GenerateRandomPhone();
+        insert c;
+    }
+    
+    private Account GetRandomCase(){
+        Integer casesCount = [SELECT COUNT() FROM Case];
+        Integer randomCaseIndex = Math.floor(Math.random() * casesCount).intValue();
+        return [SELECT Name FROM Case LIMIT 1 OFFSET :randomCaseIndex];
+    }
+    
+    private void DeleteRandomCase() {
+        Case caseToDelete = GetRandomCase();
+        delete caseToDelete;
+    }
+    
+    private void EditRandomCase() {
+        Case caseToEdit = GetRandomCase();
+        // accountToEdit.Name = GenerateRandomName();
+        // accountToEdit.Phone = GenerateRandomPhone();
+        update caseToEdit;
+    }
+    
+    private void DoAccountAction() {
         Integer actionIndex =  GetRandomNumber(3);
             
         switch on actionIndex {
@@ -63,10 +88,30 @@ global class DataGenerator implements Schedulable {
         }
     }
     
+    private void DoCaseAction() {
+        Integer actionIndex =  GetRandomNumber(3);
+            
+        switch on actionIndex {
+            when 0 {
+                CreateRandomCase();
+            }
+            when 1 {
+                DeleteRandomCase();
+            }
+            when 2 {
+                EditRandomCase();
+            }
+            when else {
+                System.debug('default');
+            }
+        }
+    }
+    
     global void execute(SchedulableContext ctx) {
         
         for (Integer i = 0; i < 15; i++) {
-            DoAction();
+            DoAccountAction();
+            DoCaseAction();
         }
         
         String now = Datetime.now().format();
