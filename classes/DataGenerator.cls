@@ -68,7 +68,7 @@ global class DataGenerator implements Schedulable {
         insert newCase;
     }
     
-    private Account GetRandomCase(){
+    private Case GetRandomCase(){
         Integer casesCount = [SELECT COUNT() FROM Case];
         Integer randomCaseIndex = Math.floor(Math.random() * casesCount).intValue();
         return [SELECT Name FROM Case LIMIT 1 OFFSET :randomCaseIndex];
@@ -85,6 +85,29 @@ global class DataGenerator implements Schedulable {
         caseToEdit.IsEscalated = !caseToEdit.IsEscalated;
         caseToEdit.Reason = GetRandomString(10);
         update caseToEdit;
+    }
+    
+    private void CreateRandomContact() {
+        Contact newContact = new Contact();
+        // TODO
+        insert newContact;
+    }
+    
+    private Contact GetRandomContact(){
+        Integer contactsCount = [SELECT COUNT() FROM Contact];
+        Integer randomContactIndex = Math.floor(Math.random() * contactsCount).intValue();
+        return [SELECT Name FROM Contact LIMIT 1 OFFSET :randomContactIndex];
+    }
+    
+    private void DeleteRandomContact() {
+        Contact contactToDelete = GetRandomContact();
+        delete contactToDelete;
+    }
+    
+    private void EditRandomContact() {
+        Contact contactToEdit = GetRandomContact();
+        // TODO
+        update contactToEdit;
     }
     
     private void DoAccountAction() {
@@ -125,13 +148,31 @@ global class DataGenerator implements Schedulable {
         }
     }
     
+    private void DoContactAction() {
+        Integer actionIndex =  GetRandomNumber(3);
+            
+        switch on actionIndex {
+            when 0 {
+                CreateRandomContact();
+            }
+            when 1 {
+                DeleteRandomContact();
+            }
+            when 2 {
+                EditRandomContact();
+            }
+            when else {
+                System.debug('default');
+            }
+        }
+    }
+    
     global void execute(SchedulableContext ctx) {
         
         for (Integer i = 0; i < 15; i++) {
             DoAccountAction();
             DoCaseAction();
-
-            // DoContactAction();
+            DoContactAction();
             // DoLeadAction();
             // DoOpportunityAction();
         }
