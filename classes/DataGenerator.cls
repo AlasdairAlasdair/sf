@@ -38,7 +38,7 @@ global class DataGenerator implements Schedulable {
         return GenerateRandomLastName() + randomSuffix;
     }
     
-    private String GetRandomString(Integer stringLength) {
+    private String GenerateRandomString(Integer stringLength) {
         String randomString = '';
 
         for (Integer i = 0; i < stringLength; i++) {
@@ -78,7 +78,7 @@ global class DataGenerator implements Schedulable {
         Case newCase = new Case();
         caseToEdit.IsClosed = GenerateRandomBool();
         caseToEdit.IsEscalated = GenerateRandomBool();
-        caseToEdit.Reason = GetRandomString(GetRandomNumber(10));
+        caseToEdit.Reason = GenerateRandomString(GetRandomNumber(10));
         insert newCase;
     }
     
@@ -97,7 +97,7 @@ global class DataGenerator implements Schedulable {
         Case caseToEdit = GetRandomCase();
         caseToEdit.IsClosed = !caseToEdit.IsClosed;
         caseToEdit.IsEscalated = !caseToEdit.IsEscalated;
-        caseToEdit.Reason = GetRandomString(GetRandomNumber(10));
+        caseToEdit.Reason = GenerateRandomString(GetRandomNumber(10));
         update caseToEdit;
     }
     
@@ -105,7 +105,7 @@ global class DataGenerator implements Schedulable {
         Contact newContact = new Contact();
         newContact.FirstName = GenerateRandomFirstName();
         newContact.LastName = GenerateRandomLastName();
-        newContact.Description = GetRandomString(GetRandomNumber(20));
+        newContact.Description = GenerateRandomString(GetRandomNumber(20));
         insert newContact;
     }
     
@@ -124,7 +124,7 @@ global class DataGenerator implements Schedulable {
         Contact contactToEdit = GetRandomContact();
         contactToEdit.FirstName = GenerateRandomFirstName();
         contactToEdit.LastName = GenerateRandomLastName();
-        contactToEdit.Description = GetRandomString(GetRandomNumber(20));
+        contactToEdit.Description = GenerateRandomString(GetRandomNumber(20));
         update contactToEdit;
     }
     
