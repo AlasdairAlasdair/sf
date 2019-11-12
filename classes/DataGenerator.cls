@@ -20,10 +20,10 @@ global class DataGenerator implements Schedulable {
     }
     
     private void CreateRandomAccount() {
-        Account a = new Account();
-        a.Name = GenerateRandomName();
-        a.Phone = GenerateRandomPhone();
-        insert a; 
+        Account newAccount = new Account();
+        newAccount.Name = GenerateRandomName();
+        newAccount.Phone = GenerateRandomPhone();
+        insert newAccount;
     }
     
     private Account GetRandomAccount(){
@@ -45,10 +45,10 @@ global class DataGenerator implements Schedulable {
     }
     
     private void CreateRandomCase() {
-        Case c = new Case();
+        Case newCase = new Case();
         // a.Name = GenerateRandomName();
         // a.Phone = GenerateRandomPhone();
-        insert c;
+        insert newCase;
     }
     
     private Account GetRandomCase(){
