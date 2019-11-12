@@ -18,7 +18,23 @@ global class DataGenerator implements Schedulable {
         String randomLastBit = String.valueOf(GetRandomNumber(100000));
         return '(' + randomAreaCode + ') ' + randomMiddleBit + ' ' + randomLastBit;
     }
+
+    private Boolean GenerateRandomBool() {
+        Integer oneOrZero = GetRandomNumber(1);
+        return oneOrZero == 1;
+    }
     
+    private String GetRandomString(Integer stringLength) {
+        String randomString = '';
+
+        for (Integer i = 0; i < stringLength; i++) {
+            Integer randomInitialIndex = GetRandomNumber(Names.Initials.size() - 1);
+            randomString += Names.Initials[randomInitialIndex];
+        }
+
+        return randomString;
+    }
+
     private void CreateRandomAccount() {
         Account newAccount = new Account();
         newAccount.Name = GenerateRandomName();
@@ -46,8 +62,9 @@ global class DataGenerator implements Schedulable {
     
     private void CreateRandomCase() {
         Case newCase = new Case();
-        // a.Name = GenerateRandomName();
-        // a.Phone = GenerateRandomPhone();
+        caseToEdit.IsClosed = GenerateRandomBool();
+        caseToEdit.IsEscalated = GenerateRandomBool();
+        caseToEdit.Reason = GetRandomString(10);
         insert newCase;
     }
     
@@ -64,8 +81,9 @@ global class DataGenerator implements Schedulable {
     
     private void EditRandomCase() {
         Case caseToEdit = GetRandomCase();
-        // accountToEdit.Name = GenerateRandomName();
-        // accountToEdit.Phone = GenerateRandomPhone();
+        caseToEdit.IsClosed = !caseToEdit.IsClosed;
+        caseToEdit.IsEscalated = !caseToEdit.IsEscalated;
+        caseToEdit.Reason = GetRandomString(10);
         update caseToEdit;
     }
     
@@ -112,6 +130,10 @@ global class DataGenerator implements Schedulable {
         for (Integer i = 0; i < 15; i++) {
             DoAccountAction();
             DoCaseAction();
+
+            // DoContactAction();
+            // DoLeadAction();
+            // DoOpportunityAction();
         }
         
         String now = Datetime.now().format();
