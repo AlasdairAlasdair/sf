@@ -32,7 +32,7 @@ global class DataGenerator implements Schedulable {
         return oneOrZero == 1;
     }
     
-    private Boolean GenerateRandomCompany() {
+    private String GenerateRandomCompany() {
         Integer randomSuffixIndex = GetRandomNumber(Names.CompanySuffixes.size() - 1);
         String randomSuffix = Names.CompanySuffixes[randomSuffixIndex];
         return GenerateRandomLastName() + randomSuffix;
