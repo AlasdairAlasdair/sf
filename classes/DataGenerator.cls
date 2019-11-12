@@ -153,6 +153,31 @@ global class DataGenerator implements Schedulable {
         update leadToEdit;
     }
     
+    private void CreateRandomOpportunity() {
+        Opportunity newOpportunity = new Opportunity();
+        opportunityToEdit.IsClosed = GenerateRandomBool();
+        newOpportunity.Description = GenerateRandomString(GetRandomNumber(10));
+        insert newOpportunity;
+    }
+    
+    private Opportunity GetRandomOpportunity(){
+        Integer opportunitiesCount = [SELECT COUNT() FROM Opportunity];
+        Integer randomOpportunityIndex = Math.floor(Math.random() * opportunitiesCount).intValue();
+        return [SELECT Name FROM Opportunity LIMIT 1 OFFSET :randomOpportunityIndex];
+    }
+    
+    private void DeleteRandomOpportunity() {
+        Opportunity opportunityToDelete = GetRandomOpportunity();
+        delete opportunityToDelete;
+    }
+    
+    private void EditRandomOpportunity() {
+        Opportunity opportunityToEdit = GetRandomOpportunity();
+        opportunityToEdit.IsClosed = GenerateRandomBool();
+        opportunityToEdit.Description = GenerateRandomString(GetRandomNumber(10));
+        update opportunityToEdit;
+    }
+    
     private void DoAccountAction() {
         Integer actionIndex =  GetRandomNumber(3);
             
@@ -209,7 +234,7 @@ global class DataGenerator implements Schedulable {
             }
         }
     }
-    
+
     private void DoLeadAction() {
         Integer actionIndex =  GetRandomNumber(3);
             
@@ -228,6 +253,25 @@ global class DataGenerator implements Schedulable {
             }
         }
     }
+
+    private void DoOpportunityAction() {
+        Integer actionIndex =  GetRandomNumber(3);
+            
+        switch on actionIndex {
+            when 0 {
+                CreateRandomOpportunity();
+            }
+            when 1 {
+                DeleteRandomOpportunity();
+            }
+            when 2 {
+                EditRandomOpportunity();
+            }
+            when else {
+                System.debug('default');
+            }
+        }
+    }
     
     global void execute(SchedulableContext ctx) {
         
@@ -236,7 +280,7 @@ global class DataGenerator implements Schedulable {
             DoCaseAction();
             DoContactAction();
             DoLeadAction();
-            // DoOpportunityAction();
+            DoOpportunityAction();
         }
         
         String now = Datetime.now().format();
