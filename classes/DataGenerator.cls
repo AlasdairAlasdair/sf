@@ -128,6 +128,7 @@ global class DataGenerator implements Schedulable {
     
     private void CreateRandomLead() {
         Lead newLead = new Lead();
+        newLead.LastName = GenerateRandomLastName();
         newLead.Company = GenerateRandomCompany();
         newLead.Phone = GenerateRandomPhone();
         insert newLead;
