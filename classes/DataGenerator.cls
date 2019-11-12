@@ -64,7 +64,7 @@ global class DataGenerator implements Schedulable {
         Case newCase = new Case();
         caseToEdit.IsClosed = GenerateRandomBool();
         caseToEdit.IsEscalated = GenerateRandomBool();
-        caseToEdit.Reason = GetRandomString(10);
+        caseToEdit.Reason = GetRandomString(GetRandomNumber(10));
         insert newCase;
     }
     
@@ -83,7 +83,7 @@ global class DataGenerator implements Schedulable {
         Case caseToEdit = GetRandomCase();
         caseToEdit.IsClosed = !caseToEdit.IsClosed;
         caseToEdit.IsEscalated = !caseToEdit.IsEscalated;
-        caseToEdit.Reason = GetRandomString(10);
+        caseToEdit.Reason = GetRandomString(GetRandomNumber(10));
         update caseToEdit;
     }
     
