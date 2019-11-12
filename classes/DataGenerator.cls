@@ -4,12 +4,20 @@ global class DataGenerator implements Schedulable {
         return Integer.valueof(Math.random() * multiplier);
     }
 
-    private String GenerateRandomName() {
-        Integer randomFirstNameIndex = GetRandomNumber(Names.FirstNames.size() - 1);
+    private String GenerateRandomFullName() {
         Integer randomInitialIndex = GetRandomNumber(Names.Initials.size() - 1);
-        Integer randomLastNameIndex = GetRandomNumber(Names.LastNames.size() - 1);        
-        String randomName = Names.FirstNames[randomFirstNameIndex] + ' ' + Names.Initials[randomInitialIndex] + '. ' + Names.LastNames[randomLastNameIndex];
-        return randomName;
+        String randomFullName = GenerateRandomFirstName() + ' ' + Names.Initials[randomInitialIndex] + '. ' + GenerateRandomLastName();
+        return randomFullName;
+    }
+
+    private String GenerateRandomFirstName() {
+        Integer randomFirstNameIndex = GetRandomNumber(Names.FirstNames.size() - 1);
+        return Names.FirstNames[randomFirstNameIndex];
+    }
+    
+    private String GenerateRandomLastName() {
+        Integer randomLastNameIndex = GetRandomNumber(Names.LastNames.size() - 1);
+        return Names.LastNames[randomLastNameIndex];
     }
     
     private String GenerateRandomPhone() {
@@ -37,7 +45,7 @@ global class DataGenerator implements Schedulable {
 
     private void CreateRandomAccount() {
         Account newAccount = new Account();
-        newAccount.Name = GenerateRandomName();
+        newAccount.Name = GenerateRandomFullName();
         newAccount.Phone = GenerateRandomPhone();
         insert newAccount;
     }
@@ -55,7 +63,7 @@ global class DataGenerator implements Schedulable {
     
     private void EditRandomAccount() {
         Account accountToEdit = GetRandomAccount();
-        accountToEdit.Name = GenerateRandomName();
+        accountToEdit.Name = GenerateRandomFullName();
         accountToEdit.Phone = GenerateRandomPhone();
         update accountToEdit;
     }
@@ -89,6 +97,8 @@ global class DataGenerator implements Schedulable {
     
     private void CreateRandomContact() {
         Contact newContact = new Contact();
+        newContact.FirstName = GenerateRandomFirstName();
+        newContact.LastName = GenerateRandomLastName();
         newContact.Description = GetRandomString(GetRandomNumber(20));
         insert newContact;
     }
@@ -106,6 +116,8 @@ global class DataGenerator implements Schedulable {
     
     private void EditRandomContact() {
         Contact contactToEdit = GetRandomContact();
+        contactToEdit.FirstName = GenerateRandomFirstName();
+        contactToEdit.LastName = GenerateRandomLastName();
         contactToEdit.Description = GetRandomString(GetRandomNumber(20));
         update contactToEdit;
     }
