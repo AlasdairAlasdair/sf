@@ -13,8 +13,10 @@ global class DataGenerator implements Schedulable {
     }
     
     private String GenerateRandomPhone() {
-        String randomPhone = String.valueOf(GetRandomNumber(100000000));
-        return randomPhone;
+        String randomAreaCode = String.valueOf(GetRandomNumber(100));
+        String randomMiddleBit = String.valueOf(GetRandomNumber(100));
+        String randomLastBit = String.valueOf(GetRandomNumber(10000));
+        return '(' + randomAreaCode + ') ' + randomMiddleBit + ' ' + randomLastBit;
     }
     
     private void CreateRandomAccount() {
