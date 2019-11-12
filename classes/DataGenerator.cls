@@ -162,7 +162,7 @@ global class DataGenerator implements Schedulable {
     private Opportunity GetRandomOpportunity(){
         Integer opportunitiesCount = [SELECT COUNT() FROM Opportunity];
         Integer randomOpportunityIndex = Math.floor(Math.random() * opportunitiesCount).intValue();
-        return [SELECT Name FROM Opportunity LIMIT 1 OFFSET :randomOpportunityIndex];
+        return [SELECT Description FROM Opportunity LIMIT 1 OFFSET :randomOpportunityIndex];
     }
     
     private void DeleteRandomOpportunity() {
