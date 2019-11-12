@@ -103,4 +103,15 @@ public class Names {
         'Jackson',
         'Clarke'
     };
+
+    public static List<String> CompanySuffixes = new List<String>{
+        'Corp',
+        ' Ltd',
+        ' Limited',
+        'Gen',
+        'ly',
+        ' Plastics',
+        ' Finance',
+        ' Group'
+    };
 }

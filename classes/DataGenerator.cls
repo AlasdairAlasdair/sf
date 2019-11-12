@@ -32,6 +32,12 @@ global class DataGenerator implements Schedulable {
         return oneOrZero == 1;
     }
     
+    private Boolean GenerateRandomCompany() {
+        Integer randomSuffixIndex = GetRandomNumber(Names.CompanySuffixes.size() - 1);
+        String randomSuffix = Names.CompanySuffixes[randomSuffixIndex];
+        return GenerateRandomLastName() + randomSuffix;
+    }
+    
     private String GetRandomString(Integer stringLength) {
         String randomString = '';
 
@@ -122,6 +128,31 @@ global class DataGenerator implements Schedulable {
         update contactToEdit;
     }
     
+    private void CreateRandomLead() {
+        Lead newLead = new Lead();
+        newLead.Company = GenerateRandomCompany();
+        newLead.Phone = GenerateRandomPhone();
+        insert newLead;
+    }
+    
+    private Lead GetRandomLead(){
+        Integer leadsCount = [SELECT COUNT() FROM Lead];
+        Integer randomLeadIndex = Math.floor(Math.random() * leadsCount).intValue();
+        return [SELECT Name FROM Lead LIMIT 1 OFFSET :randomLeadIndex];
+    }
+    
+    private void DeleteRandomLead() {
+        Lead leadToDelete = GetRandomLead();
+        delete leadToDelete;
+    }
+    
+    private void EditRandomLead() {
+        Lead leadToEdit = GetRandomLead();
+        leadToEdit.Company = GenerateRandomCompany();
+        leadToEdit.Phone = GenerateRandomPhone();
+        update leadToEdit;
+    }
+    
     private void DoAccountAction() {
         Integer actionIndex =  GetRandomNumber(3);
             
@@ -179,13 +210,32 @@ global class DataGenerator implements Schedulable {
         }
     }
     
+    private void DoLeadAction() {
+        Integer actionIndex =  GetRandomNumber(3);
+            
+        switch on actionIndex {
+            when 0 {
+                CreateRandomLead();
+            }
+            when 1 {
+                DeleteRandomLead();
+            }
+            when 2 {
+                EditRandomLead();
+            }
+            when else {
+                System.debug('default');
+            }
+        }
+    }
+    
     global void execute(SchedulableContext ctx) {
         
         for (Integer i = 0; i < 15; i++) {
             DoAccountAction();
             DoCaseAction();
             DoContactAction();
-            // DoLeadAction();
+            DoLeadAction();
             // DoOpportunityAction();
         }
         
