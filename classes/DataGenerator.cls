@@ -89,7 +89,7 @@ global class DataGenerator implements Schedulable {
     
     private void CreateRandomContact() {
         Contact newContact = new Contact();
-        // TODO
+        newContact.Description = GetRandomString(GetRandomNumber(20));
         insert newContact;
     }
     
@@ -106,7 +106,7 @@ global class DataGenerator implements Schedulable {
     
     private void EditRandomContact() {
         Contact contactToEdit = GetRandomContact();
-        // TODO
+        contactToEdit.Description = GetRandomString(GetRandomNumber(20));
         update contactToEdit;
     }
     
