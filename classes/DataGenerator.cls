@@ -20,7 +20,7 @@ global class DataGenerator implements Schedulable {
     }
 
     private Boolean GenerateRandomBool() {
-        Integer oneOrZero = GetRandomNumber(1);
+        Integer oneOrZero = GetRandomNumber(2);
         return oneOrZero == 1;
     }
     
