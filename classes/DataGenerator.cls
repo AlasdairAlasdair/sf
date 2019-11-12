@@ -153,7 +153,7 @@ global class DataGenerator implements Schedulable {
     
     private void CreateRandomOpportunity() {
         Opportunity newOpportunity = new Opportunity();
-        opportunityToEdit.IsClosed = GenerateRandomBool();
+        newOpportunity.IsClosed = GenerateRandomBool();
         newOpportunity.Description = GenerateRandomString(GetRandomNumber(10));
         insert newOpportunity;
     }
