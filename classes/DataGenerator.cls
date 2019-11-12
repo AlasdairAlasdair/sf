@@ -110,7 +110,7 @@ global class DataGenerator implements Schedulable {
     private Contact GetRandomContact(){
         Integer contactsCount = [SELECT COUNT() FROM Contact];
         Integer randomContactIndex = Math.floor(Math.random() * contactsCount).intValue();
-        return [SELECT Name FROM Contact LIMIT 1 OFFSET :randomContactIndex];
+        return [SELECT Description FROM Contact LIMIT 1 OFFSET :randomContactIndex];
     }
     
     private void DeleteRandomContact() {
@@ -136,7 +136,7 @@ global class DataGenerator implements Schedulable {
     private Lead GetRandomLead(){
         Integer leadsCount = [SELECT COUNT() FROM Lead];
         Integer randomLeadIndex = Math.floor(Math.random() * leadsCount).intValue();
-        return [SELECT Name FROM Lead LIMIT 1 OFFSET :randomLeadIndex];
+        return [SELECT Company FROM Lead LIMIT 1 OFFSET :randomLeadIndex];
     }
     
     private void DeleteRandomLead() {
