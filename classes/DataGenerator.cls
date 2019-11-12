@@ -68,10 +68,10 @@ global class DataGenerator implements Schedulable {
         insert newCase;
     }
     
-    private Case GetRandomCase(){
+    private Case GetRandomCase() {
         Integer casesCount = [SELECT COUNT() FROM Case];
         Integer randomCaseIndex = Math.floor(Math.random() * casesCount).intValue();
-        return [SELECT Name FROM Case LIMIT 1 OFFSET :randomCaseIndex];
+        return [SELECT AccountId FROM Case LIMIT 1 OFFSET :randomCaseIndex];
     }
     
     private void DeleteRandomCase() {
