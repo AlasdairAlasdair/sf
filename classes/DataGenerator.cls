@@ -76,9 +76,9 @@ global class DataGenerator implements Schedulable {
     
     private void CreateRandomCase() {
         Case newCase = new Case();
-        caseToEdit.IsClosed = GenerateRandomBool();
-        caseToEdit.IsEscalated = GenerateRandomBool();
-        caseToEdit.Reason = GenerateRandomString(GetRandomNumber(10));
+        newCase.IsClosed = GenerateRandomBool();
+        newCase.IsEscalated = GenerateRandomBool();
+        newCase.Reason = GenerateRandomString(GetRandomNumber(10));
         insert newCase;
     }
     
