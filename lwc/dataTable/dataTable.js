@@ -1,6 +1,6 @@
 import { LightningElement } from 'lwc';
 
-export default class datatable extends LightningElement {
+export default class dataTable extends LightningElement {
     
     handleLoad() {
         
